@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-quotes</title>
+    <link rel="shortcut icon" href="./assets/moon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+  <body class="body" data-lang="en">
+    <header class="header">
+      <img class="moon" src="./assets/img/svg/1.png"></img>
+      <div class="clock">
+        <p class="time"></p>
+        <p class="date"></p>
+        <p class="today"></p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <h1 class="quote"></h1>
+        <hr class="line">
+        <p class="author"></p>
+        <div class="buttons">
+          <div class="lang">
+            <span class="lang__item lang-active" data-lang="en">en</span>
+            <span class="lang__slash">/</span>
+            <span class="lang__item" data-lang="ru">ru</span>
+          </div>
+          <div class="btn-player">
+            <audio src="./assets/audio/Skylar Grey - I Know You.mp3" class="audio"></audio>
+            <div class="btn-player__prev">
+              <img src="./assets/img/svg/prev.svg" alt="prev-btn">
+            </div>
+            <div class="btn-player__play">
+              <img class="img__src" src="./assets/img/svg/play.svg" alt="play-btn" style="width: 40px; height: 40px;">
+            </div>
+            <div class="btn-player__next">
+              <img src="./assets/img/svg/next.svg" alt="next-btn">
+            </div>
+          </div>
+          <button class="btn-next">Next</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__github">
+        <span class="copy">©</span>
+        <span class="year">2022</span>
+        <a class="github" href="https://github.com/Veronika2811">github Veronika2811</a>
+      </div>
+      <a href="https://rs.school/js-stage0/" class="rss-link"></a>
+    </footer>
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
+</html>
