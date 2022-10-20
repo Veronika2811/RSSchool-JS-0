@@ -45,6 +45,13 @@ navigationBirds.addEventListener("click", function changeClassActive(event) {
 const songs = ["forest", "solovey", "drozd", "javoronok", "zarynka", "slavka"];
 const playBtn = document.querySelector(".btn-play");
 let isPlay = false;
+let songIndex = 0;
+
+function loadSong(song) {
+  audio.src = `./assets/audio/${song}.mp3`;
+}
+
+loadSong(songs[songIndex]);
 
 function playAudio() {
   isPlay = true;
